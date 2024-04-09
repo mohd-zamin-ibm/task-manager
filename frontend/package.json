@@ -1,0 +1,23 @@
+{
+  "name": "task-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "core-js": "^3.36.1",
+    "moment": "^2.30.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/compiler-sfc": "^3.4.21",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1"
+  }
+}
