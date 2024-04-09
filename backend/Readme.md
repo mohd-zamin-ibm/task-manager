@@ -28,9 +28,9 @@ http://localhost:3000/api/register/
 Method: POST
 Body:
 {
-  "name": "Zamin",
-  "email": "mohd.zamin+6@ibm.com",
-  "password": "random@U1"
+  "name": "",
+  "email": "",
+  "password": ""
 }
 ```
 ### Login
@@ -39,8 +39,8 @@ http://localhost:3000/api/login/
 Method: POST
 Body:
 {
-  "email": "mohd.zamin+6@ibm.com",
-  "password": "random@U1"
+  "email": "",
+  "password": ""
 }
 ```
 

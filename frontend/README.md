@@ -26,7 +26,7 @@ CRUD operations with user authentication. Will add new features later.
 
 ![alt text](image.png)
 
-![alt text](image-1.png)
+![alt text](image-6.png)
 
 ![alt text](image-2.png)
 
