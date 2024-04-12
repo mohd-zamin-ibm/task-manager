@@ -5,7 +5,7 @@ import { Settings } from './environment/config';
 
 const PORT = Settings.PORT;
 
-const MONGO_URI = Settings.mongoURL;
+const MONGO_URI = process.env['MONGO_URL'];
 
 const server = http.createServer(app);
 

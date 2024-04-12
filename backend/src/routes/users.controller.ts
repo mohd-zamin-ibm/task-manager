@@ -3,7 +3,6 @@ import * as express from 'express';
 import * as jwt from 'jsonwebtoken';
 import validator from '../helpers/validator';
 import { UserModel } from '../model/User';
-import { Settings } from './../environment/config';
 import schema from './schema';
 
 const userRoutes = express.Router();
@@ -42,7 +41,7 @@ userRoutes.post('/login', validator(schema.userCredential), async (req, res) => 
   if (!user) return res.status(400).send('Email address not found!');
   const validPassword = await bcrypt.compare(req.body.password, user.password);
   if (!validPassword) return res.status(400).send('Invalid Password!');
-  const token = jwt.sign({ _id: user._id }, Settings.secret_Token);
+  const token = jwt.sign({ _id: user._id }, process.env['SECRET_TOKEN']);
   res.header('auth-token', token).send({ token: token, user: { id: user.id, name: user.name, email: user.email } });
 });
 
